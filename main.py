@@ -1,5 +1,5 @@
 def hello_world():
-    print("Hello, it's me Kratos ")
+    print("Hello, it's me Kratos Duka Trick ")
 
 if __name__ == "__main__":
     hello_world()
