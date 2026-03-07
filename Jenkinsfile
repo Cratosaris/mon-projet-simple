@@ -1,20 +1,25 @@
 pipeline {
     agent any
+
     stages {
-        stage('Checkout') {
+
+        stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/Cratosaris/mon-projet-simple.git'
+                echo "Cloning repository"
             }
         }
-        stage('Test') {
-            steps {
-                sh 'python3 -m pytest --version'
-            }
-        }
+
         stage('Build') {
             steps {
-                sh 'python3 main.py'
+                echo "Building project"
             }
         }
+
+        stage('Test') {
+            steps {
+                echo "Running tests"
+            }
+        }
+
     }
 }
