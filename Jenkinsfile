@@ -4,13 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                echo "Cloning repository..."
-                git 'https://github.com/Cratosaris/mon-projet-simple.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo "Building application..."
