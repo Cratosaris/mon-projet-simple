@@ -7,7 +7,7 @@ pipeline {
         stage('Clone Code') {
             steps {
                 echo "Cloning repository..."
-                git 'https://github.com/Cratosaris/jenkins-demo-app.git'
+                git 'https://github.com/Cratosaris/mon-projet-simple.git'
             }
         }
 
